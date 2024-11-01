@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-wrapper {
+        @apply w-[100vw] px-5 bg-emerald-500 flex items-center border border-red-500
+    }
+
+    .nav-container {
+        @apply w-[80%] mx-auto flex justify-start gap-5 items-center h-full text-white border border-blue-500
+    }
+
+    .nav-item {
+        @apply text-lg hover:bg-emerald-700 px-3 h-full  flex items-center
+    }
+
+    .selectbox {
+        @apply w-[70px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[46px] mx-1 mt-1 mb-1 appearance-none  text-center text-xs md:text-sm lg:text-base border-none ring-1 bg-white rounded-lg outline-none focus:border-blue-500 focus:ring-blue-500 
+        disabled:bg-slate-100   disabled:ring-0
+    } 
+    
+    .div_class {
+        @apply flex w-[70px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[46px] mx-1 mt-1 mb-1 border justify-center items-center text-xs md:text-sm lg:text-base rounded-lg bg-slate-200 font-bold
+    }
+
+    .btn {
+        @apply px-3 py-2 rounded-lg w-[100px]
+    }
+
+    .boActive {
+        @apply bg-blue-500 text-white 
+    }
+
+    .meoActive {
+        @apply bg-rose-500 text-white 
+    }
+
+    .boDeactive {
+        @apply bg-transparent text-blue-500 border border-blue-500
+    }
+
+    .meoDeactive {
+        @apply bg-transparent text-rose-500 border border-rose-500
+    }
+}
